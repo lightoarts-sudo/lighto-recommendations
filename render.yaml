@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: lightoarts-recommendations
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /health
